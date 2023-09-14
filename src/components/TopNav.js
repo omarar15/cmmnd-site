@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 const TopNav = (props) => {
   var navi = [
     { text: "Home", link: "/" },
-    { text: "Shop", link: "/shop" },
+    { text: "Shop", link: "https://cmmndllc.myshopify.com/" },
     { text: "Music", link: "/music", home: true },
     { text: "Archive", link: "/archives", home: true },
   ];
