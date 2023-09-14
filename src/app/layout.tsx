@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import TopNav from "@/components/TopNav";
 import logo from "@/app/cmmnd_logo.png";
-import { ContentfulProv } from "./context";
 
 export const metadata: Metadata = {
   title: "CMMND",
