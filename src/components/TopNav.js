@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const TopNav = (props) => {
+  const pathname = usePathname();
+
   var navi = [
     { text: "Home", link: "/" },
     { text: "Shop", link: "https://cmmndllc.myshopify.com/" },
@@ -26,7 +30,13 @@ const TopNav = (props) => {
       </h2>
     ) : (
       <Link key={i} href={page.link}>
-        <h2>{page.text}</h2>
+        <h2
+          style={{
+            textDecoration: pathname === page.link ? "underline" : "none",
+          }}
+        >
+          {page.text}
+        </h2>
       </Link>
     )
   );
